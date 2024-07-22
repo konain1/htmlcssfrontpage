@@ -1,0 +1,105 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('./pattern.png');
+    background-position: center;
+    background-size: corer;
+    padding: 10px 10px ;
+    overflow: hidden;
+    position: relative;
+}
+
+nav{
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+}
+.login-btn{
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;
+    font-weight: 400;
+}
+.download-btn{
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 80px;
+    display: inline-block;
+    font-weight: 400;
+    background-image: linear-gradient(45deg,#df4881,#c430d7);
+    border-radius: 30px;
+    border-top-right-radius: 0px;
+    transition: 0.5s;
+}
+.download-btn:hover{
+    border-top-right-radius: 30px;
+}
+
+.content{
+    padding: 10px 100px;
+
+    margin-top: 10%;
+    max-width: 600px;
+}
+.content h1{
+    font-size: 50px;
+    color: #222;
+}
+
+.content p{
+    margin: 10px 0 30px;
+    color: #333;
+    font-size: 12px;
+    line-height: 1.5;
+    animation-delay: 0.5s;
+}
+
+.content .download-btn{
+    font-size: 15px;
+    padding: 15px 80px;
+    animation-delay: 1s;
+
+}
+.tiger{
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    width: 530px;
+    
+}
+.tiger.anim{
+    animation-delay: 1.5s;
+
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup {
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
